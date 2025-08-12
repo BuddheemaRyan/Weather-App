@@ -140,3 +140,78 @@ body::before {
     opacity: 0.8;
     margin-top: -25px;
 }
+.humidityWindInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.infoBox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 12px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: whitesmoke;
+    min-width: 160px;
+}
+
+.humiIcon,
+.windIcon {
+    font-size: 40px;
+    color: #4fc3f7;
+}
+.infoText .label {
+    font-weight: 600;
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+.infoText .value {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.infoContainer {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    margin-top: 20px;
+    padding: 0 10px;
+    scrollbar-width: none;
+    overflow-x: auto;  
+} 
+
+.infoItem {
+    background: rgba(0, 0, 0, 0.25);
+    padding: 10px 15px;
+    border-radius: 12px;
+    min-width: 130px;
+    text-align: center;
+    color: whitesmoke;
+    transition: transform 0.3s ease;
+}
+
+.infoItem:hover {
+    transform: scale(1.1);
+    background: rgba(225, 225, 225, 0.2);
+}
+
+.infoLabel {
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 8px;
+    opacity: 60%;
+    display: block;
+}
+
+.infoValue {
+    font-size: 20px;
+    font-weight: 700;
+}
+
