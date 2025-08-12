@@ -1,70 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather Pro</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-    
-  </head>
-  <body>
-    <main class="main">
-      <div class="input-container">
-        <input type="text" class="city-input" placeholder="Search City" />
-        <button class="search-btn">
-          <span class="material-symbols-outlined"> search </span>
-        </button>
-      </div>
-     <div class="weatherInfo">
-        <div class="weather">
-            <span class="material-symbols-outlined loactionIcon">location_on</span>
-            <span class="location">Sri Lanka</span>
-            <span class="location-city">Ambalangoda</span>
-            <div class="date">Tue, 12 Aug</div>
-            <div class="time" id="localtime">12.00 PM</div>
-        </div>
-        <div class="weatherIcon">
-            <img src="assets/images/Weather-removebg-preview.png" alt="weather icon">
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Pro</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+<body>
+  <div class="main">
+    <div class="input-container">
+      <input type="text" class="city-input" placeholder="Search City" />
+      <button class="search-btn">
+        <span class="material-symbols-outlined"> search </span>
+      </button>
+    </div>
 
+    <div class="weatherInfo">
+      <div class="weather">
+        <span class="material-symbols-outlined locationIcon">location_on</span>
+        <span class="location">Sri Lanka</span>
+        <span class="location-city">Ambalangoda</span>
+        <div class="date" id="localdate">Tue, 12 Aug</div>
+        <div class="Time" id="localtime"></div>
+      </div>
+
+      <div class="weatherIcon">
+        <img src="assets/images/Weather-removebg-preview.png" alt="weather icon">
         <div class="temp">27°C</div>
         <div class="temptxt">Cloudy</div>
-     </div>
-        <div class="humidityWindInfo">
-                <div class="humidity">
-                    <span class="material-symbols-outlined humiIcon">water_drop</span>
-                    <span class="humiText1">Humidity</span>
-                    <span class="humiText2">75%</span>
-                </div>
-                <div class="wind">
-                    <span class="material-symbols-outlined windIcon">air</span>
-                    <span class="windText1">Wind Speed</span>
-                    <span class="windText2">1.54 M/s</span>
-                </div>
-                <div class="infoContainer"> 
-                <div class="infoItem" id="cloudCover">
-                  <span class="infoLabel">Cloud Cover</span>
-                  <span class="infoValue">75%</span>
-                </div>
-              
-                <div class="infoItem" id="uvIndex">
-                  <span class="infoLabel">UV Index</span>
-                  <span class="infoValue">5</span>
-                </div>
-              
-                <div class="infoItem" id="pressure">
-                  <span class="infoLabel">Pressure</span>
-                  <span class="infoValue">1013 hPa</span>
-                </div>
-              
-                <div class="infoItem" id="visibility">
-                  <span class="infoLabel">Visibility</span>
-                  <span class="infoValue">10 km</span>
-                </div>
-              </div> 
-            </div>
-      </section>
-    </main>
-  </body>
+      </div>
+
+      <div class="humidityWindInfo">
+        <div class="humidity">
+          <span class="material-symbols-outlined humiIcon">water_drop</span>
+          <span class="humiText1">Humidity</span>
+          <span class="humiText2">75%</span>
+        </div>
+        <div class="wind">
+          <span class="material-symbols-outlined windIcon">air</span>
+          <span class="windText1">Wind Speed</span>
+          <span class="windText2">1.54 M/s</span>
+        </div>
+
+        <div class="infoContainer">
+          <div class="infoItem" id="cloudCover">
+            <span class="infoLabel">Cloud Cover</span>
+            <span class="infoValue">75%</span>
+          </div>
+          <div class="infoItem" id="uvIndex">
+            <span class="infoLabel">UV Index</span>
+            <span class="infoValue">5</span>
+          </div>
+          <div class="infoItem" id="pressure">
+            <span class="infoLabel">Pressure</span>
+            <span class="infoValue">1013 hPa</span>
+          </div>
+          <div class="infoItem" id="visibility">
+            <span class="infoLabel">Visibility</span>
+            <span class="infoValue">10 km</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="forecastItemsPack">
+      <div class="forecastItem">
+        <h5 class="forcastDate">13 Aug</h5>
+        <img src="assets/images/Unknown-23_copy-removebg-preview.png" alt="pic">
+        <h5 class="forcastTemp">18°C</h5>
+      </div>
+      <div class="forecastItem">
+        <h5 class="forcastDate">14 Aug</h5>
+        <img src="assets/images/Unknown-23_copy-removebg-preview.png" alt="pic">
+        <h5 class="forcastTemp">18°C</h5>
+      </div>
+      <div class="forecastItem">
+        <h5 class="forcastDate">15 Aug</h5>
+        <img src="assets/images/Unknown-23_copy-removebg-preview.png" alt="pic">
+        <h5 class="forcastTemp">20°C</h5>
+      </div>
+      <div class="forecastItem">
+        <h5 class="forcastDate">16 Aug</h5>
+        <img src="assets/images/Unknown-23_copy-removebg-preview.png" alt="pic">
+        <h5 class="forcastTemp">17°C</h5>
+      </div>
+      <div class="forecastItem">
+        <h5 class="forcastDate">17 Aug</h5>
+        <img src="assets/images/Unknown-23_copy-removebg-preview.png" alt="pic">
+        <h5 class="forcastTemp">19°C</h5>
+      </div>
+      <div class="forecastItem">
+        <h5 class="forcastDate">18 Aug</h5>
+        <img src="assets/images/Unknown-23_copy-removebg-preview.png" alt="pic">
+        <h5 class="forcastTemp">18°C</h5>
+      </div>
+      <div class="forecastItem">
+        <h5 class="forcastDate">19 Aug</h5>
+        <img src="assets/images/Unknown-23_copy-removebg-preview.png" alt="pic">
+        <h5 class="forcastTemp">20°C</h5>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/work.js"></script>
+</body>
 </html>
